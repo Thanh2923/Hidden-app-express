@@ -1,0 +1,81 @@
+
+<div id="main">
+    <div class="product-spbc my-5">
+    <div class="container">
+       <div class="title-product d-flex">
+        <span class="fw-bold fs-5" style="width: 20%;" >SẢN PHẨM BÁN CHẠY</span>
+        <p style="width: 80%; border: 1px solid #ebebeb;; height: 1px;"  class="m-3" ></p>
+       </div>
+        <div class="mini">
+          <span style="color: #6e7874;" >
+            Những sản phẩm quần áo nam mới nhất, tuyệt vời nhất đã được HIDDLE cập nhật.
+          </span>
+        </div>
+
+    </div>
+     <div class="spbc">
+      <div class="container-fluid ">
+        <div class="row my-5">
+            <% posts.forEach((pro)=>{ %>
+                <div class="col-lg-3 col-md-4 col-sm-4 mb-2">
+                    <a class="text-decoration-none text-black" href="/chitietsanpham/<%=pro.id%>">
+                    <img  class="img-product" src="./images/<%=pro.image%>" style="width: 175px; height: 176px;" alt="">
+                    <h6 class="mt-3"><%=pro.name%></h6>
+                    <div class="price d-flex  m-2">
+                         <span class="text-danger fw-bolder  "><%=pro.price%></span> <p class=" ps-3 text-decoration-line-through " style="color: #acb2b0;" >450.000đ</p>
+                    </div>
+                </a>
+                  </div>
+                <%})%>
+        
+
+         
+        </div>
+      </div>
+     </div>
+  </div>
+  <div class="product-talk my-5">
+    <div class="container">
+       <div class="title-product d-flex">
+        <span class="fw-bold fs-5" style="width: 20%;" >HIDDEN TALK</span>
+        <p style="width: 80%; border: 1px solid #ebebeb; height: 1px;"  class="m-3" ></p>
+       </div>
+        <div class="mini">
+          <span style="color: #6e7874;" >
+            <span class="mini">
+              
+        Những câu chuyện tuyệt vời cho một chàng trai. Luôn khiến bạn  đầy cảm hứng...
+    
+            </span>
+          </span>
+        </div>
+
+    </div>
+     <div class="talk">
+      <div class="container ">
+        <div class="row my-5">
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img class="img-product" src="./images/talk1.webp" style="width: 263px; height: 263px;" alt="">
+            <h6 class="mt-3" >Tips bảo quản áo gió nam chống nước mà mọi người cần biết</h6>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img class="img-product" src="./images/talk2.webp" style="width: 263px; height: 263px;" alt="">
+            <h6 class="mt-3" >Tips bảo quản áo gió nam chống nước mà mọi người cần biết</h6>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img class="img-product" src="./images/talk3.webp" style="width: 263px; height: 263px;" alt="">
+            <h6 class="mt-3" >Tips bảo quản áo gió nam chống nước mà mọi người cần biết</h6>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6">
+            <img class="img-product" src="./images/talk4.webp" style="width: 263px; height: 263px;" alt="">
+            <h6 class="mt-3" >Tips bảo quản áo gió nam chống nước mà mọi người cần biết</h6>
+          </div>
+         
+
+         
+        </div>
+      </div>
+     </div>
+  </div>
+  
+</div> 

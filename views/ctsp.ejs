@@ -1,0 +1,52 @@
+<%- include("../layouts/head")%>
+    <div id="main">
+        <div class="link-item mb-5">
+        <div class="container">
+            <ul class="d-flex list-unstyled  my-3 " >
+               <li><a class="text-decoration-none text-black " href="index.html">Trang chủ</a></li>
+               <span class="px-3 fw-bold " >></span> 
+               <li><a class="text-decoration-none text-blue  " href="">Áo khoát Nam</a></li>
+               
+            </ul>
+           </div>
+      </div>
+      <div class="product-details">
+        <div class="container">
+            <div class="row">
+        <div class="col-6">
+            <img class="img-product" src="../images/<%=post.image%>" style="width:300px; height:350px" alt="">
+        </div>
+        <div class="col-6">
+            <h3><%=post.name%></h3>
+             <div class="price d-flex my-3  ">
+                <span class="fs-4 fw-bolder text-danger pe-3" ><%=post.price%> đ" </span><p class="fs-5 text-gray-500 mt-1 text-decoration-line-through">450.000đ</p>
+             </div>
+             <h6  class="mb-4" >Kích thước:</h6>
+             <div class="size-img d-flex ">
+    
+                <input type="button" value="S" name="" id="">
+                <input type="button" value="M" name="" id="">
+                <input type="button" value="L" name="" id="">
+             </div>
+             <h6 class="my-4">Số lượng:</h6>
+             <div class="quantity-counter">
+                <button class="quantity-btn" onclick="decreaseQuantity()">-</button>
+                <span class="quantity-display">1</span>
+                <button class="quantity-btn" onclick="increaseQuantity()">+</button>
+              </div>
+              <div class="submit-add d-flex my-5">
+                <input type="submit" name="tvgh" value="Thêm vào giỏ hàng" >
+                <a href="index.html" class="text-decoration-none"><input type="submit" name="mngay" value="Tiếp tục mua hàng" ></a>
+              </div>
+    
+        </div>
+    </div>
+        </div>
+      </div>
+        
+        
+    </div>
+
+    <%- include("../layouts/footer")%>
+
+   
